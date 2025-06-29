@@ -31,8 +31,8 @@ export default function Greeting() {
 
         </div>
 
-        <div className='gap-3 flex items-center'>
-            <div className='relative inline-flex border-2 border-amber-500 h-[48px] w-[48px] items-center justify-center text-white rounded-full group cursor-pointer'>
+        <div className='gap-3.5 flex items-center'>
+            <div className='relative inline-flex border-2 border-amber-500 p-2.5 items-center justify-center text-white rounded-full group cursor-pointer'>
                 <IoAccessibility />
                 <span className='absolute border-2 border-amber-500 rounded-full opacity-0  group-hover:inset-[-8px] group-hover:opacity-100  inset-0 transition-all duration-300'></span>
             </div>
