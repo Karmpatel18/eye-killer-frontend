@@ -2,8 +2,10 @@
 import Image from 'next/image';
 import React from 'react'
 import { TfiFaceSmile } from "react-icons/tfi";
-import { motion } from 'motion/react';
+import { motion, scale } from 'motion/react';
+import HeroImages from './HeroImages';
 function Hero() {
+    const [startFloat, setStartFloat] = React.useState(false);
     return (
         <div className="flex relative w-full items-center justify-center">
             <div className="flex flex-col items-center justify-center w-full pt-36 pb-20">
@@ -18,74 +20,23 @@ function Hero() {
                 <p className='max-w-2xl text-lg leading-8 tracking-tight text-center text-neutral-400'>Driving growth for leading brands and organisations through high-performing websites and results-driven digital marketing.</p>
             </div>
 
-            <motion.div
-                className='absolute top-6 right-52'
-                animate={{ y: ['0%', '-6%', '0%'] }}
-                transition={{
-                    repeat: Infinity,
-                    duration: 3,
-                    ease: 'easeInOut',
-                }}
-            >
-                <Image
-                    src="https://eyekiller.s3-assets.com/homepage-hero/here-we-are-oliver-jeffers.jpg"
-                    alt="Description of the image"
-                    height={100}
-                    width={100}
-                    className="w-32 h-auto object-cover rounded-lg"
-                />
-            </motion.div>
-            <motion.div
-                className='absolute top-2 left-52'
-                animate={{ y: ['0%', '-6%', '0%'] }}
-                transition={{
-                    repeat: Infinity,
-                    duration: 3,
-                    ease: 'easeInOut',
-                }}
-            >
-                <Image
-                    src="https://eyekiller.s3-assets.com/work/featured-image/grand-opera-house-website-featured-image.jpg"
-                    alt="Description of the image"
-                    height={100}
-                    width={100}
-                    className="w-24 h-auto object-cover rounded-lg"
-                />
-            </motion.div>
-            <motion.div
-                className='absolute bottom-12 left-52'
-                animate={{ y: ['0%', '-6%', '0%'] }}
-                transition={{
-                    repeat: Infinity,
-                    duration: 3,
-                    ease: 'easeInOut',
-                }}
-            >
-                <Image
-                    src="https://eyekiller.s3-assets.com/homepage-hero/jamie-robinson-eyekiller-meeting-team.jpg"
-                    alt="Description of the image"
-                    height={100}
-                    width={100}
-                    className="w-36 h-auto object-cover rounded-lg"
-                />
-            </motion.div>
-            <motion.div
-                className='absolute bottom-2 right-52'
-                animate={{ y: ['0%', '-6%', '0%'] }}
-                transition={{
-                    repeat: Infinity,
-                    duration: 3,
-                    ease: 'easeInOut',
-                }}
-            >
-                <Image
-                    src="https://eyekiller.s3-assets.com/homepage-hero/arts-council-website-homepage.jpg"
-                    alt="Description of the image"
-                    height={100}
-                    width={100}
-                    className="w-44 h-auto object-cover rounded-lg"
-                />
-            </motion.div>
+        <HeroImages 
+            images="https://eyekiller.s3-assets.com/homepage-hero/here-we-are-oliver-jeffers.jpg" 
+            className='top-6 right-52' 
+            alt="Description of the image" />
+        <HeroImages 
+            images="https://eyekiller.s3-assets.com/work/featured-image/grand-opera-house-website-featured-image.jpg" 
+            className='top-6 left-64' 
+            alt="Description of the image" />
+        <HeroImages 
+            images="https://eyekiller.s3-assets.com/homepage-hero/jamie-robinson-eyekiller-meeting-team.jpg" 
+            className='bottom-24 left-52' 
+            alt="Description of the image" />
+        <HeroImages 
+            images="https://eyekiller.s3-assets.com/homepage-hero/arts-council-website-homepage.jpg" 
+            className='bottom-12 right-64' 
+            alt="Description of the image" />
+            
         </div>
     )
 }

@@ -21,8 +21,8 @@ const services = [{
 
 
 export default function Greeting() {
-    return <div className="flex w-full justify-between px-6 py-8 text-xl font-semibold tracking-tight items-center text-neutral-50">
-        <div>EYE KILLER</div>
+    return <div className="flex w-full justify-between px-12 py-8 text-xl font-semibold tracking-tight items-center text-neutral-50">
+        <div className='font-bold text-2xl'>EYE KILLER</div>
         <div className='flex items-center gap-8 text-base'>
             {
                 services.map((services, idx) => <div key={services.title} className='hover:text-amber-500 hover:underline underline-offset-2 transition-all duration-300 cursor-pointer'>{services.title}</div>)
@@ -36,7 +36,7 @@ export default function Greeting() {
                 <IoAccessibility />
                 <span className='absolute border-2 border-amber-500 rounded-full opacity-0  group-hover:inset-[-8px] group-hover:opacity-100  inset-0 transition-all duration-300'></span>
             </div>
-            <div className='relative inline-block text-base bg-amber-500 px-6 py-3 text-neutral-800 rounded-full group cursor-pointer font-bold'>
+            <div className='relative inline-block text-base bg-amber-500 px-6 py-3 text-neutral-900 rounded-full group cursor-pointer font-bold'>
                 LET'S TALK
                 <span className='absolute border-2 border-amber-500 rounded-full opacity-0  group-hover:inset-[-6px] group-hover:opacity-100  inset-0 transition-all duration-300'></span>
             </div>
