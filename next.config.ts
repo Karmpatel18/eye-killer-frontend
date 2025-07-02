@@ -6,8 +6,13 @@ const nextConfig: NextConfig = {
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'eyekiller.s3-assets.com',
-        pathname: '**',
+          hostname: 'eyekiller.s3-assets.com',
+          pathname: '**',
+        },
+        {
+          protocol: 'https',
+          hostname: 'eyekiller.com',
+          pathname: '**',
       },
     ],
   },
