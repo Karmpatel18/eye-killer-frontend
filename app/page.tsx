@@ -12,9 +12,9 @@ export default function Home() {
         <Hero />
         <Carousel />
         <Pitch />
-        <div className='w-full px-16 gap-12 grid grid-cols-2'>
+        <div className='w-full px-3 lg:px-16 lg:gap-12 grid grid-cols-1 lg:grid-cols-2'>
           <Card title='GRAND OPERA HOUSE' description='Bringing Oliver’s world-famous art and stories to life through vibrant design and creative content.' imageUrl='https://eyekiller.s3-assets.com/work/featured-image/_1582x1582_crop_center-center_none/33652/Grand-Opera-House-Featured-Image.webp' />
-          <div className="mt-42">
+          <div className="mt-6 lg:mt-42">
             <Card title='Arts Council of Northern Ireland' description='Advancing accessibility and engagement with intuitive design, inclusivity, and innovation.' imageUrl='https://eyekiller.s3-assets.com/work/featured-image/_1582x1582_crop_center-center_none/34258/Arts-Council-of-NI-Featured-Image_2025-03-27-114234_gffy.webp' />
           </div>
         </div>

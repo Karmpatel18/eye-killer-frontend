@@ -20,8 +20,8 @@ function Card({ title, description, imageUrl }: CardProps) {
         />
         </div>
 
-        <h2 className='text-4xl group-hover:underline underline-offset-4 decoration-2 duration-300 transition-all tracking-tighter uppercase max-w-md mt-4 font-semibold text-neutral-50'>{title}</h2>
-        <p className='text-lg tracking-tight leading-6 mt-3 text-neutral-500'>{description}</p>
+        <h2 className='text-3xl lg:text-4xl group-hover:underline underline-offset-4 decoration-2 duration-300 transition-all tracking-tighter uppercase max-w-md mt-4 font-semibold text-neutral-50'>{title}</h2>
+        <p className='text-md lg:text-lg tracking-tight leading-6 mt-3 text-neutral-500'>{description}</p>
     </div>
   )
 }
