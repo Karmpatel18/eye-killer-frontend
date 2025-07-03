@@ -9,7 +9,7 @@ interface CardProps {
 
 function Card({ title, description, imageUrl }: CardProps) {
   return (
-    <div className="w-full max-w-2xl group  overflow-clip cursor-pointer">
+    <div className="w-full max-w-2xl group max-h-min overflow-clip cursor-pointer">
         <div className='w-full'>        
             <Image 
             className=" w-full h-auto object-cover rounded-2xl"

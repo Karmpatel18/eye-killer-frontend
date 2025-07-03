@@ -38,9 +38,9 @@ function Footer() {
   return (
     
         <div className="flex flex-col  justify-center w-full bg-neutral-900 rounded-2xl  text-neutral-50 px-14 items-start ">
-            <div className='flex py-20 gap-32'>
+            <div className='flex flex-col lg:flex-row py-20 gap-32'>
             <div className='flex flex-col items-start '>
-                <h1 className='relative font-bold tracking-tighter text-8xl uppercase max-w-xl'>Let's work together
+                <h1 className='relative font-bold tracking-tighter text-5xl lg:text-8xl uppercase max-w-xl'>Let's work together
                     <span className='h-16 w-16 rounded-full bg-amber-500 p-2.5 absolute bottom-2 right-2 inline-flex text-neutral items-center justify-center group'><TfiFaceSmile size={48} className='text-neutral-900 group-hover:rotate-45 rotate-6 transition-all duration-300 ease-linear' /></span>
                 </h1>
                 <div className='mt-12  relative  text-2xl bg-amber-500 p-3 items-center justify-center text-neutral-900 rounded-full group cursor-pointer font-bold flex flex-row pr-6 tracking-tighter'>

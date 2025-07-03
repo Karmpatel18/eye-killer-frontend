@@ -21,9 +21,9 @@ const services = [{
 
 
 export default function Greeting() {
-    return <div className="flex w-full justify-between px-12 py-8 text-xl font-semibold tracking-tight items-center text-neutral-50">
-        <div className='font-bold text-2xl'>EYE KILLER</div>
-        <div className='flex items-center gap-8 text-base'>
+    return <div className="flex w-full justify-between px-3 py-4 text-lg  md:px-12 md:py-8 md:text-xl font-semibold tracking-tight items-center text-neutral-50">
+        <div className='font-bold text-xl md:text-2xl'>EYE KILLER</div>
+        <div className='items-center gap-8 text-base hidden lg:flex'>
             {
                 services.map((services, idx) => <div key={services.title} className='hover:text-amber-500 hover:underline underline-offset-2 transition-all duration-300 cursor-pointer'>{services.title}</div>)
             }
