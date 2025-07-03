@@ -20,7 +20,7 @@ function Carousel() {
     const duplicated = [...logos, ...logos]; // repeat for seamless loop
 
     return (
-        <div className="overflow-hidden whitespace-nowrap w-full">
+        <div className="overflow-hidden whitespace-nowrap w-full mt-4 sm:mt-2 md:mt-0 lg:mt-0 xl:mt-0 2xl:mt-0">
             <motion.div
                 className="flex gap-8"
                 animate={{ x: ['0%', '-50%'] }}
